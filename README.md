@@ -1,13 +1,9 @@
-# text-memo-only
+# daily-report-paste
+許可されたURLのtextareaに対して、右クリックから日報を自動入力する
 
 ## Project setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
 ```
 
 ### Compiles and minifies for production
