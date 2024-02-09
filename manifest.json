@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "DailyDaily Report Paste",
+  "version": "2.0.0",
+  "description": "日報のテンプレートを張り付ける",
+  "permissions": [
+    "storage",
+    "background",
+    "contextMenus",
+    "activeTab"
+  ],
+  "content_scripts": [{
+    "matches": ["https://*/*"],
+    "js": [
+      "dist/js/app.js",
+      "dist/js/chunk-vendors.js"
+    ]
+  }],
+  "background": {
+    "matches": ["https://*/*"],
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "DailyDaily Report Paste",
+    "default_popup": "popup/popup.html"
+  }
+}
