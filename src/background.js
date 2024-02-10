@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
     title : 'Daily Report Paste',
     type : 'normal',
     contexts : ['all'],
-    id: 'parent_id',
+    id: 'daily-report-paste',
     onclick : onClick()
   })
 })

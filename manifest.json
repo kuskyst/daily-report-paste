@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "DailyDaily Report Paste",
+  "name": "Daily Report Paste",
   "version": "2.0.0",
   "description": "日報のテンプレートを張り付ける",
   "permissions": [
@@ -23,7 +23,7 @@
     ]
   },
   "browser_action": {
-    "default_title": "DailyDaily Report Paste",
+    "default_title": "Daily Report Paste",
     "default_popup": "popup/popup.html"
   }
 }
