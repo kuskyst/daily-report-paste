@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "@/App";
+import Template from "@/Template";
 
 Vue.config.productionTip = false;
 
@@ -8,7 +8,7 @@ chrome.extension.onMessage.addListener(() => {
     Vue.prototype.$items = items;
     const target = document.activeElement;
     const v = new Vue({
-      render: h => h(App)
+      render: h => h(Template)
     });
     if (target.nodeName.toLowerCase() === "textarea") {
       v.$mount()

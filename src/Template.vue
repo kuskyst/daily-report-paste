@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="template">
     {{ today.toFormat("MM/dd") }}
     <br>
     {{ prefix }}前回の作業
@@ -14,7 +14,7 @@ import { DateTime } from "luxon";
 import Task from "@/Task";
 
 export default {
-  name: "App",
+  name: "Template",
   components: {
     Task
   },
